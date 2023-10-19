@@ -72,8 +72,8 @@ function SetupQuiz() {
           onChange={(e) => setCategory_id(Number(e.target.value))}
         >
           {category.length > 0 &&
-            category.map((c: any) => (
-              <option value={c.category_id}>{c.name}</option>
+            category.map((cu: any) => (
+              <option value={cu.category_id}>{cu.name}</option>
             ))}
         </select>
       </div>

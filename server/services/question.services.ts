@@ -9,7 +9,7 @@ export const findOne = async (id: number) => {
 };
 export const findAnswer = async (id: number) => {
   const answer = await db.execute(
-    `SELECT * From answer WHERE question_id = ?`,
+    `SELECT * FROM answer WHERE question_id = ?`,
     [id]
   );
   return answer;

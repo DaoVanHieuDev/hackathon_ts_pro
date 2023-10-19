@@ -25,10 +25,10 @@ function QuestionDetails() {
         {question.length > 0 && question[0].content}
       </h1>
       {question.length > 0 &&
-        question.map((q: any) => (
+        question.map((qu: any) => (
           <div className="flex flex-col justify-center items-center">
             <button className="bg-blue-300 border w-3/4 my-2">
-              {q.contentAns}
+              {qu.contentAns}
             </button>
           </div>
         ))}
